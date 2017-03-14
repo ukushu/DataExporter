@@ -32,6 +32,30 @@ var heightAdress = Excel.GetExcelPos(0, 2);
 xl.Rows[0][0] = String.Format("={0}*{1}", widthAdress , heightAdress);
 ```
 
+**Why I had chose exactly this way to interact with ```xlsx``` files?**
+
+This info can be useful in case of you need sth MORE than my class functionality. There is exist few ways to interact with Excel files. Let's check my short experience with them:
+
+* Microsoft.Office.Interop.Excel
+
+  * Excel must be installed on the machine
+  * Extremally slow (11 250 cells will be saved in 22 sec)
+  * Lot of memory leaks
+  * Hard to write code. In case of some code mistakes you will leave background runned Excel process.
+
+* OleDB
+  * No ability to work with formulas (you will be able only to read value from cell, but not a formula)
+  * Fast
+  * Easy in use
+
+* OpenXml
+  * Hard in use/ Code is not easy readeble
+  * Fast
+
+* ClosedXml ( wrapper around OpenXml ) [used in my lib]
+  * Easy in use
+  * Fast. In 57 times faster than Interop  (20 000 cells will be saved in 00:00:00.6787608 sec)
+
 # Csv Worker
 
 **Description:**
