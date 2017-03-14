@@ -26,7 +26,7 @@ namespace BotAgent.DataExporter
         /// Init Csv file editor
         /// </summary>
         /// <param name="separatorChar">Char separator on FileRead and FileSave</param>
-        public IndependentCsv(char separatorChar=",")
+        public IndependentCsv(char separatorChar=',')
         {
             SeparatorChar = separatorChar;
         }
