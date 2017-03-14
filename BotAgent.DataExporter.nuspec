@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>IfritDataExporter</id>
+    <version>0.9.0003</version>
+    <title>Ifrit</title>
+    <authors>Andrew Vynnychenko</authors>
+    <description>Tiny Data Exporter can be used for simple read/write Excel, Csv and Ini files. Tiny and fast.</description>
+    <copyright>Copyright by Andrew Vynnychenko ( UKS )  2015-2016</copyright>
+    <tags>Ifrit UKS</tags>
+    <dependencies>
+        <dependency id="ClosedXML" version="0.80.1"/>
+    </dependencies>
+  </metadata>
+  <files>
+  </files>
+</package>
