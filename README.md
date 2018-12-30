@@ -91,7 +91,10 @@ Csv csv = new Csv('\t');
 
 **Description:**
 
-Simple class to work with ```ini``` files. Ini files data saved with the following dara: "Section", "key" and "value"
+Simple class to work with ```ini``` files. Ini files data saved with the following dara: "Section", "key" and "value".
+
+It's slow because of it's based on 'kernel32.dll' methods. If you need to read/write lot of data better to use some another library. But in another case its a good way.
+
 
 **Example usage:**
 
